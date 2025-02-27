@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <center>
+        <div class="login-box">
+   
+    <h1>Enter your phone number/mail id</h1>
+    <form action="/generate-otp" method="POST">
+        <div class="user-box">
+        <input type="text" name="phone_number" required>
+        <br>
+        </div>
+    
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        
+          
+        <input type="submit" value="Generate OTP and QR Code">
+    </a>
+       
+    </form>
+        </div>
+</body>
+</html>

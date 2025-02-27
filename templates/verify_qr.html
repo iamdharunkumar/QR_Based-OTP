@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify QR Code</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="login-box">
+    <h1>Verify QR Code</h1>
+    <form action="/verify" method="POST" enctype="multipart/form-data">
+        <div class="user-box">
+        <h2 style="color: aliceblue;">enter the email</h2>
+        <input type="text" name="phone_number" required>
+        <br>
+        <h2 style="color: aliceblue;">Upload QR Code</h2>
+        <input type="file" name="file" accept=".png, .jpg, .jpeg" required>
+        <br>
+        </div>
+        <input type="submit" value="Verify QR Code">
+    
+    </form>
+    <br>
+</div>
+    
+</body>
+</html>
